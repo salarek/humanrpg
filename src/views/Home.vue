@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <header class="header-bar"></header>
+    <header class="header-bar">
+      <button type="button" class="btn btn-light">Light</button>
+    </header>
   </div>
 </template>
 
@@ -19,5 +21,12 @@ export default {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-bar {
+  background-color: #7e7e7e;
+  width: 100%;
+  height: 10vh;
 }
 </style>
