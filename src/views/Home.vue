@@ -26,7 +26,6 @@ export default {
   background-color: $primary;
   width: 100vw;
   height: 100vh;
-
   justify-content: center;
 }
 .header-bar {
@@ -45,14 +44,12 @@ export default {
 .greetings-container {
   padding: 2%;
   min-width: 300px;
-
   width: 50%;
 }
 .login-form {
   position: relative;
   padding: 2%;
   min-width: 300px;
-
   width: 50%;
 }
 </style>
