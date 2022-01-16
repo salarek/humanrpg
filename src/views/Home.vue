@@ -4,8 +4,12 @@
       <div style="padding: 12px" class="bg-primary text-white">Human RPG</div>
     </header>
     <div class="main-view">
-      <div class="greetings-container">hello</div>
-      <div class="login-form"><login /></div>
+      <div class="left-page">
+        <div class="greetings-container">
+          <div>chuj</div>
+        </div>
+      </div>
+      <div class="right-page"><login /></div>
     </div>
   </div>
 </template>
@@ -36,20 +40,54 @@ export default {
   flex-direction: row;
 }
 .main-view {
+  height: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.greetings-container {
+.left-page {
   padding: 2%;
   min-width: 300px;
   width: 50%;
 }
-.login-form {
+.right-page {
   position: relative;
   padding: 2%;
   min-width: 300px;
   width: 50%;
+}
+.greetings-container {
+  font-size: 1rem;
+  min-width: 300px;
+  min-height: 300px;
+  padding: 5%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: $secondary;
+}
+.greetings-container:before {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 19px solid $secondary;
+  border-left: 19px solid #48d399;
+  border-right: 19px solid #48d399;
+}
+.greetings-container:after {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 19px solid $secondary;
+  border-left: 19px solid #48d399;
+  border-right: 19px solid #48d399;
 }
 </style>

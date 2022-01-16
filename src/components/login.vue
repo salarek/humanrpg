@@ -133,13 +133,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "@/scss/variables";
 .login {
+  contain: content;
   position: relative;
-  padding: 4%;
+  padding: 5%;
+  color: white;
+
   width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 24px;
+  background-color: $secondary;
+
   transition: all 0.5s ease;
 }
 
@@ -147,6 +150,7 @@ export default {
   transform: scale(1);
   width: 80%;
 }
+
 .login:before {
   content: "";
   width: 100%;
@@ -154,9 +158,9 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  border-bottom: 29px solid white;
-  border-left: 29px solid #48d399;
-  border-right: 29px solid #48d399;
+  border-bottom: 19px solid $secondary;
+  border-left: 19px solid #48d399;
+  border-right: 19px solid #48d399;
 }
 .login:after {
   content: "";
@@ -165,8 +169,8 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-top: 29px solid white;
-  border-left: 29px solid #48d399;
-  border-right: 29px solid #48d399;
+  border-top: 19px solid $secondary;
+  border-left: 19px solid #48d399;
+  border-right: 19px solid #48d399;
 }
 </style>
